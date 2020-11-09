@@ -1,6 +1,7 @@
 package com.param;
 
 
+import org.junit.jupiter.api.Nested;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtensionContext;
 import org.junit.jupiter.params.ParameterizedTest;
@@ -66,6 +67,7 @@ public class TestParam {
         assertNotNull(argment);
     }
 
+    @Nested
     class MyArgumentProvide implements ArgumentsProvider{
 
         @Override
